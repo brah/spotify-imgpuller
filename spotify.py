@@ -1,11 +1,11 @@
 from selenium import webdriver
 import requests
 import time
-from tineye import TinEye, TinEyePhoto
+
 # todo:
-# automatically reverse search the image (alexs 300iq idea)
+# Automatically reverse image on TinEye -> paid API i.e. has to be hacky implementation, Google(?)
 driver = webdriver.Chrome()
-user = input("paste spotify user link:")
+user = input("Paste Spotify profile link:")
 driver.get(user)
 time.sleep(1)
 src = driver.find_element_by_xpath(
